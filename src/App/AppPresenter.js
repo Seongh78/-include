@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-import "./App.css";
+import "./App.scss";
 // 공용컴포넌트
 import {
   NavBar
