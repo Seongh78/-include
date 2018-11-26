@@ -9,6 +9,31 @@ import {
   NavBar
 } from '../commons';
 
+// 라우터 등록
+const Routes = [
+  {
+    name: "Home",
+    path: "/",
+    exact: true,
+    component: Main,
+    props: {}
+  },
+  {
+    name: "Main",
+    path: "/main",
+    exact: true,
+    component: Main,
+    props: {}
+  },
+  {
+    name: "NotFound",
+    path: "/",
+    exact: false,
+    component: NotFound,
+    props: {}
+  },
+]
+
 /**
  * AppPresenter
  */
@@ -28,9 +53,16 @@ const AppPresenter = () => (
           <div className="column">
             {/* 라우터 */}
               <Switch>
-                <Route exact path="/" component={Main} />
-                <Route exact path="/main" component={Main} />
-                <Route path="/" component={NotFound} />
+                {
+                  Routes.map(route=>(
+                    <Route 
+                      key={route.name}
+                      exact={route.exact}
+                      path={route.path} 
+                      component={route.component} 
+                    />
+                  ))
+                }
               </Switch>
             {/* 라우터 */}
           </div>
