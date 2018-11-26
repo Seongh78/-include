@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import "./App.scss";
+import "./Sass.sass";
 // 공용컴포넌트
 import {
   NavBar
