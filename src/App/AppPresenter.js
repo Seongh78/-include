@@ -24,12 +24,15 @@ const AppPresenter = () => (
     {/* 네비바 */}
     <NavBar menus={AppRoutes.slice(0, AppRoutes.length-1)}></NavBar>
 
+    
+
     {/* 컨텐츠 컨테이너 */}
-    <main className="ui page grid " style={{marginTop:'25px'}}>
+    {/* <main className="ui page grid " style={{marginTop:'25px'}}>
         <div className="row">
-          <div className="column">
+          <div className="column"> */}
             {/* 라우터 */}
-              <Switch>
+            <div style={{marginTop:'51.2px'}}>
+              <Switch >
                 {
                   AppRoutes.map(route=>(
                     <Route 
@@ -41,10 +44,11 @@ const AppPresenter = () => (
                   ))
                 }
               </Switch>
+            </div>
             {/* 라우터 */}
-          </div>
+          {/* </div>
         </div>
-    </main>
+    </main> */}
     {/* 컨텐츠 컨테이너 */}
     
   </Fragment>

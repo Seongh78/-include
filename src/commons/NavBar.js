@@ -8,15 +8,43 @@ const NavBar = (prop) => {
     const { menus } = prop;
     // console.log(menus);
     
-    return (  
-        <nav className={navbarStyleList} style={{backgroundColor:'#4374D9'}}>
+    return ( 
+//         <div class="ui fixed inverted menu">
+//     <div class="ui container">
+//       <a href="#" class="header item">
+//         <img class="logo" src="assets/images/logo.png" />
+//         Project Name
+//       </a>
+//       <a href="#" class="item">Home</a>
+//       <div class="ui simple dropdown item">
+//         Dropdown <i class="dropdown icon"></i>
+//         <div class="menu">
+//           <a class="item" href="#">Link Item</a>
+//           <a class="item" href="#">Link Item</a>
+//           <div class="divider"></div>
+//           <div class="header">Header Item</div>
+//           <div class="item">
+//             <i class="dropdown icon"></i>
+//             Sub Menu
+//             <div class="menu">
+//               <a class="item" href="#">Link Item</a>
+//               <a class="item" href="#">Link Item</a>
+//             </div>
+//           </div>
+//           <a class="item" href="#">Link Item</a>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+         
+        <nav className={navbarStyleList} style={{backgroundColor:'#39a2fb'}}>
             <NavLink to="/">
                 <h3 className="brand item">#include</h3>
             </NavLink>
             <div className="right menu">
                 {menus.map(menu=>(
-                    <NavLink to={menu.path} key={menu.name}>
-                        <p className="item">{menu.name}</p>
+                    <NavLink className="item" to={menu.path} key={menu.name}>
+                        <span>{menu.name}</span>
                     </NavLink>
                 ))}
                 {/* <NavLink to="/main">

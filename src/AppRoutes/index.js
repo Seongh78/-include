@@ -1,4 +1,5 @@
 import Main from "../pages/Main";
+import QuestionTimeline from "../pages/QuestionTimeline";
 import NotFound from "../pages/NotFound";
 
 // 라우터 등록
@@ -11,10 +12,10 @@ const AppRoutes = [
       props: {}
     },
     {
-      name: "Main",
-      path: "/main",
+      name: "QuestionTimeline",
+      path: "/timeline",
       exact: true,
-      component: Main,
+      component: QuestionTimeline,
       props: {}
     },
     {

@@ -1,0 +1,16 @@
+.profile-card{
+    background: #39a2fb;
+    padding: 55px 15px 15px 15px;
+    text-align: center;
+    color: #fff;
+}
+
+    .profile-card > .user-name {
+        line-height: 100%;
+        margin-bottom: 25px;
+        font-weight: normal;
+    }
+        .profile-card > .user-name > small {
+            font-weight:normal;
+            font-size:.7em;
+        }
